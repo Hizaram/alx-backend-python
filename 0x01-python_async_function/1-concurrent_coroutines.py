@@ -11,8 +11,8 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """Function that executes wait_random n times
-        Args:   n(int): number of times to execute wait_random
-                max_delay(int): number of secs to delay the program
+        Args:   n(int): start threshold for number of delayed secs
+                max_delay(int): end threshold for number of delayed secs
 
         Returns: a List of all the delay_times
     """
